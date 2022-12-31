@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save the Date - Anoop & Gopika</title>
+	
+	<!-- Basic styles -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+
+	<!-- Owl carousel styles -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/owl.theme.green.min.css">
+
+	<!-- Document specific styles -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<section class="main-cover">
+		<div class="header">
+			<img class="animate__animated animate__bounceInDown" src="img/Cover Header.png">
+		</div>
+		<div class="bees-animation">
+			<lottie-player class="bee-left animate__animated animate__fadeIn" src="https://lottie.host/96864f38-88c4-4191-bebf-dc722910d14b/kEJqUNYc5v.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+			<lottie-player class="bee-right animate__animated animate__fadeIn" src="https://lottie.host/96864f38-88c4-4191-bebf-dc722910d14b/kEJqUNYc5v.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+		</div>
+		<div class="button-container animate__animated animate__bounceInUp">
+			<a class="button white" onclick="startStory()">Read our story</a>
+			<a class="button blue">Download invitation</a>
+			<p class="intro-text">
+				Swipe left to read through our story. But if you’re a busy soul, feel free to just download the invitation above.
+			</p>
+		</div>
+	</section>
+
+	<div class="chapter-card-container" style="display: none;">
+		<a href="" class="logo">
+			<img src="img/Logo.svg">
+		</a>
+
+		<div class="slides">
+			<div class="owl-carousel owl-theme">
+				<div class="item">
+					<div class="chapter-container">
+					    <div class="chapter-card">
+				    	<div class="card-cover">
+				    		<img src="img/chapter-1/cover.png">
+				    		<div class="content">
+				    			<span class="chapter-number">Chapter 1</span>
+				    			<h2 class="chapter-title">A Match Made in <br/><span style="text-decoration: line-through">Heaven</span> <span style="color: #FFC42B">Bumble</span></h2>
+				    		</div>
+				    	</div>
+				    	<div class="card-question-container">
+				    		<h5 class="title">Let's start with a short intro about Gopika?</h5>
+				    		<div>
+				    			<span class="pill"><span class="emoji">🏠</span> Chettikulangara</span>
+				    			<span class="pill"><span class="emoji">👰</span> 26 years</span>
+				    			<span class="pill"><span class="emoji">💃</span> Dancer</span>
+				    			<span class="pill"><span class="emoji">🎓</span> COE, Chengannur</span>
+				    			<span class="pill"><span class="emoji">💼</span> South Indian Bank</span>
+				    			<span class="pill"><span class="emoji">🌃</span> Cosmos enthusiast</span>
+				    		</div>
+				    	</div>
+				    	<div class="card-question-container">
+				    		<h5 class="title">How did Gopika and Anoop meet?</h5>
+				    		<h3 class="answer">May 2021, lockdown. Gopika was cautiously testing the dating waters on Bumble when Anoop's profile caught her eye.</h3>
+				    	</div>
+				    	<div class="card-question-container">
+				    		<h5 class="title">What were Gopika’s thoughts when she saw Anoop’s profile?</h5>
+				    		<h3 class="answer">Looking back, she laughs about that moment. "His pictures were so terrible," she says. His humorous bio tipped the scales in his favour, and she decided it was worth swiping right.</h3>
+				    	</div>
+				    	<div class="card-question-container">
+				    		<h5 class="title">Sweet. Now tell me something about Anoop?</h5>
+				    		<div>
+				    			<span class="pill"><span class="emoji">🏠</span> Irinjalakuda</span>
+				    			<span class="pill"><span class="emoji">🤵</span> 28 years</span>
+				    			<span class="pill"><span class="emoji">🎓</span> BITSian</span>
+				    			<span class="pill"><span class="emoji">💼</span> Zeta</span>
+				    			<span class="pill"><span class="emoji">🚴‍♂️</span> Cyclist</span>
+				    			<span class="pill"><span class="emoji">🍿</span> Movie lover</span>
+				    			<span class="pill"><span class="emoji">🍖</span> Big time foodie</span>
+				    		</div>
+				    	</div>
+				    	<div class="card-question-container">
+				    		<h5 class="title">What were Anoop's thoughts when Gopika’s profile came up?</h5>
+				    		<h3 class="answer">The timing was just right. Anoop, who had been working from his home in Thrissur, came across Gopika's profile and her likes in cycling and travel spiked his interest. He swiped right.</h3>
+				    	</div>
+					    </div>
+					    <a class="button yellow" onclick="nextSlide()">Read on</a>
+					    <a class="button ghost">Back to first page</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="chapter-container">
+						<div class="chapter-card card-yellow">
+							<div>
+								<div id="match-card-header" class="invisible">
+									<img class="header" src="img/chapter-match/boom.png">
+									<h5 class="sub-header">And thus, they got matched!</h5>
+								</div>
+								<img src="img/chapter-match/check.png" class="match-check invisible">
+								<img src="img/chapter-match/dp.png" class="match-dp" style="display: none;">
+								<!-- <img src="img/chapter-match/output-onlinegiftools.gif" class="match-dp"> -->
+								<div id="match-card-footer" class="invisible">
+									<p class="description">Getting matched was just the beginning, read on to find how things turned for them later on.</p>
+									<a class="button white" onclick="nextSlide()">Read on</a>
+									<a class="button ghost">Back to First Page</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+			    	<div class="chapter-container">
+					    <div class="chapter-card">
+					    	<div class="card-cover">
+					    		<img src="img/chapter-2/cover.png">
+					    		<div class="content">
+					    			<span class="chapter-number">Chapter 2</span>
+					    			<h2 class="chapter-title">Getting to Know Each Other</h2>
+					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h5 class="title">Great! So what happened after the match?</h5>
+					    		<h3 class="answer">After the usual ‘Hi’s and ‘Hello’s, topics moved to cycling, travel, banking, design and what not.</h3>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<img src="img/chapter-2/1.gif">
+					    	</div>
+				    		<div class="card-question-container">
+					    		<h3 class="answer">Not to miss the quintessential Malayalee question ‘naattil evideyaa’!</h3>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<img src="img/chapter-2/2.png">
+					    	</div>
+				    		<div class="card-question-container">
+					    		<h3 class="answer">Bumble prompt games were super helpful in unravelling some mysteries which otherwise would have remained hidden 😂</h3>
+					    	</div>
+					    	<div class="card-question-container" style="margin-bottom: 0px">
+					    		<img src="img/chapter-2/3.png">
+					    	</div>
+					    </div>
+					    <a class="button yellow" onclick="nextSlide()">Read on</a>
+					    <a class="button ghost">Back to first page</a>
+					</div>
+			    </div>
+			    <div class="item">
+			    	<div class="chapter-container">
+					    <div class="chapter-card">
+					    	<div class="card-cover">
+					    		<img src="img/chapter-3/cover.png">
+					    		<div class="content">
+					    			<span class="chapter-number">Chapter 3</span>
+					    			<h2 class="chapter-title">First Date at the Great Indian Railways</h2>
+					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h5 class="title">When did they finally meet each other?</h5>
+					    		<h3 class="answer">After more exchanges over calls, WhatsApp and Instagram, they met in a railway station over a ₹10 coffee. Not kidding, the first date (although a 5 min one 😛) happened at Thrissur railway station platform over a simple bru coffee.</h3>
+					    	</div>
+					    	<div class="card-question-container image-container">
+					    		<img src="img/chapter-3/1.png">
+					    		<p class="caption">If coffee is love, then the cup of coffee is emotion! ✨</p>
+					    	</div>
+				    		<div class="card-question-container">
+					    		<h3 class="answer">“A socially-distanced coffee with masks and ample amounts of sanitizer thrown in the mix, that first in-person meet-up sealed the deal”, says a happy Anoop.</h3>
+					    	</div>
+				    		<div class="card-question-container">
+					    		<h5 class="title">First meetup location</h5>
+					    		<h3 class="answer">Kerala, India</h3>
+					    		<div>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Railway Station, Thrissur</span>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Platform Number 2</span>
+					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h5 class="title">Haha, that’s super cool!</h5>
+					    		<h3 class="answer">Exactly. Who would’ve thought back then that this would just be the first of an umpteen dates to come!</h3>
+					    	</div>
+					    </div>
+					    <a class="button yellow" onclick="nextSlide()">Read on</a>
+					    <a class="button ghost">Back to first page</a>
+					</div>
+			    </div>
+			    <div class="item">
+			    	<div class="chapter-container">
+					    <div class="chapter-card">
+					    	<div class="card-cover">
+					    		<img src="img/chapter-4/cover.png">
+					    		<div class="content">
+					    			<span class="chapter-number">Chapter 4</span>
+					    			<h2 class="chapter-title">Towards Bigger and Better Dates!</h2>
+					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h5 class="title">How did things pan out after the meet-up?</h5>
+					    		<h3 class="answer">With time, they managed the challenges that came along with long-distance dating. After the infamous railway station date, they made it a point to make more planned dates. 😅</h3>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h5 class="title">Great. So what are some of their common interests?</h5>
+					    		<div>
+					    			<span class="pill"><span class="emoji">🏔</span> Travel</span>
+					    			<span class="pill"><span class="emoji">🍿</span> Movies</span>
+					    			<span class="pill"><span class="emoji">🎨</span> Art & Decor</span>
+					    			<span class="pill"><span class="emoji">🎵</span> Music</span>
+					    			<span class="pill"><span class="emoji">🥗</span> Cooking</span>
+					    			<span class="pill"><span class="emoji">🧠</span> Planning</span>
+					    		</div>
+					    	</div>
+				    		<div class="card-question-container">
+					    		<h5 class="title">When did their first trip happen?</h5>
+					    		<h3 class="answer">The first long trip happened in Nov 2022, during Gopika’s birthday where they did a road-trip to Bangalore.</h3>
+					    	</div>
+				    		<div class="card-question-container">
+				    			<img src="img/chapter-4/1.png">
+				    		</div>
+				    		<div class="card-question-container">
+					    		<h3 class="answer">Anoop says, “during those long strolls in Cubbon park, Lal bagh and MG Road, we decided to base our relationship on mutual respect and companionship that we cherish”.</h3>
+					    	</div>
+					    </div>
+					    <a class="button yellow" onclick="nextSlide()">Read on</a>
+					    <a class="button ghost">Back to first page</a>
+					</div>
+			    </div>
+			    <div class="item">
+			    	<div class="chapter-container">
+					    <div class="chapter-card">
+					    	<div class="card-cover">
+					    		<img src="img/chapter-5/cover.png">
+					    		<div class="content">
+					    			<span class="chapter-number">Chapter 5</span>
+					    			<h2 class="chapter-title">Shh! Parents Are Coming In.</h2>
+					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h5 class="title">How did they present it before their parents?</h5>
+					    		<h3 class="answer">While Gopika had hinted about Anoop to her mom early on in the relationship, Anoop pulled a rather dramatic cinematic type reveal before his parents.</h3>
+					    	</div>
+					    	<div class="card-question-container image-container">
+					    		<img src="img/chapter-5/1.png">
+					    		<p class="caption">Net Happiness Quotient of this image = ∞</p>
+					    	</div>
+				    		<div class="card-question-container">
+					    		<h5 class="title">Sweet. What was their reaction?</h5>
+					    		<h3 class="answer">Contrary to popular belief, parents were overwhelmed - they were more than happy to hear the news and were so eager to meet Gopika and talk to her. During the following weeks, they met both parents and made it official with them too!</h3>
+					    	</div>
+				    		<div class="card-question-container">
+				    			<img src="img/chapter-5/2.png">
+				    		</div>
+				    		<div class="card-question-container">
+					    		<h3 class="answer">“The #Thallumala styled pennukanal (traditional meeting of the prospective bride and the groom) will always have a special place in our hearts”, Gopika smiles.</h3>
+					    	</div>
+					    </div>
+					    <a class="button yellow" onclick="nextSlide()">Read on</a>
+					    <a class="button ghost">Back to first page</a>
+					</div>
+			    </div>
+			    <div class="item">
+			    	<div class="chapter-container">
+					    <div class="chapter-card">
+					    	<div class="card-cover">
+					    		<img src="img/chapter-6/cover.png">
+					    		<div class="content">
+					    			<span class="chapter-number">Chapter 6</span>
+					    			<h2 class="chapter-title">More Trips, Stories and Fun</h2>
+					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h3 class="answer">Every weekend trip made, every story shared, every moment spent together brought them closer and closer at heart.</h3>
+					    	</div>
+					    	<div class="card-question-container image-container">
+					    		<img src="img/chapter-6/1.png">
+					    		<p class="caption">Who doesn't like filters!</p>
+					    	</div>
+				    		<div class="card-question-container">
+					    		<h5 class="title">What are their favourite travel spots?</h5>
+					    		<h3 class="answer">Although the duo has an endless list of fav spots, some of their frequent getaways are:</h3>
+					    		<div>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Munnar, Kerala</span>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Ooty, Tamil Nadu</span>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Goa</span>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Palakkad, Kerala</span>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Alappuzha, Kerala</span>
+					    		</div>
+					    	</div>
+				    		<div class="card-question-container">
+				    			<img src="img/chapter-6/2.png">
+				    		</div>
+				    		<div class="card-question-container">
+					    		<h3 class="answer">Be it in the midst of the picturesque Munnar, mist-laiden Ooty or sunny beaches in Goa, they spent quality time complementing each other, understanding each other’s likes, dislikes, aspirations, passion and thus making the base of their relationship even more stronger.</h3>
+					    	</div>
+					    	<div class="card-question-container" style="margin: 0px;">
+				    			<img src="img/chapter-6/3.png">
+				    		</div>
+					    </div>
+					    <a class="button yellow" onclick="nextSlide()">Read on</a>
+					    <a class="button ghost">Back to first page</a>
+					</div>
+			    </div>
+			    <div class="item">
+			    	<div class="chapter-container">
+					    <div class="chapter-card">
+					    	<div class="card-cover">
+					    		<img src="img/chapter-7/cover.png">
+					    		<div class="content">
+					    			<span class="chapter-number">Chapter 7</span>
+					    			<h2 class="chapter-title">The Big Day</h2>
+					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h5 class="title">So far so good. Now let the cat out of the bag!</h5>
+					    		<h3 class="answer">🥁 After 78 traditional family meet-ups and 7342 phone calls between parents (just kidding 😛), date for the big function was decided. Yes, Gopika and Anoop are getting married on 28th Jan 2023, at Kandiyoor Mahadeva Temple, Mavelikkara. 🥳</h3>
+					    	</div>
+					    	<div class="card-question-container image-container">
+					    		<a href="https://goo.gl/maps/7sHZp1CKiVppw6pN6" target="_blank">
+					    			<img src="img/chapter-7/1.png">
+					    			<p class="caption">📍 Tap to view the wedding location</p>
+					    		</a>
+					    	</div>
+				    		<div class="card-question-container">
+					    		<h5 class="title">Details of the wedding</h5>
+					    		<h3 class="answer">8:00 to 8:30 AM</h3>
+					    		<div>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Kandiyoor Mahadeva Temple</span>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Mavelikkara, Alappuzha, Kerala</span>
+					    		</div>
+					    	</div>
+				    		<div class="card-question-container image-container">
+					    		<a href="https://goo.gl/maps/VSBD4woRbUv6zJSJ9" target="_blank">
+					    			<img src="img/chapter-7/2.png">
+					    			<p class="caption">📍 Tap to view the reception location</p>
+					    		</a>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h5 class="title">Details of the reception</h5>
+					    		<h3 class="answer">4:30 to 8:30 PM</h3>
+					    		<div>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Sindhu Convention Centre</span>
+					    			<span class="pill"><span class="emoji">🇮🇳</span> Irinjalakuda, Thrissur, Kerala</span>
+					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h5 class="title">Am I invited to the event?</h5>
+					    		<h3 class="answer">Of course, yes! Please consider this as an official invitation and bless the couple with your presence on their big day.</h3>
+					    		<a class="link">
+					    			Download invitation
+					    		</a>
+					    	</div>
+					    </div>
+					    <a class="button yellow" onclick="nextSlide()">Read on</a>
+					    <a class="button ghost">Back to first page</a>
+					</div>
+			    </div>
+			    <div class="item">
+			    	<div class="chapter-container">
+					    <div class="chapter-card">
+					    	<div class="card-cover">
+					    		<img src="img/chapter-8/cover.png">
+					    		<div class="content">
+					    			<span class="chapter-number">Chapter 8</span>
+					    			<h2 class="chapter-title">Picture Abhi Baaki Hai, Mere Dost!</h2>
+					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h3 class="answer">Gopika and Anoop are all set to begin a new chapter of their lives as a married couple as they learn and grow together. Their relationship has been built on a friendship and connection that's growing stronger every day.</h3>
+					    	</div>
+					    	<div class="card-question-container image-container">
+					    		<img src="img/chapter-7/1.png">
+				    			<p class="caption">📍 Tap to view the wedding location</p>		
+					    	</div>
+				    		<div class="card-question-container">
+					    		<h3 class="answer">"He makes my life easy and since we met, life - and our relationship - has been so smooth," says Gopika. "It’s like living with my best friend."</h3>
+					    	</div>
+				    		<div class="card-question-container image-container">
+					    		<img src="img/chapter-7/2.png">
+				    			<p class="caption">📍 Tap to view the reception location</p>		
+					    	</div>
+					    	<div class="card-question-container">
+					    		<h3 class="answer">Anoop is still stunned by how quickly everything fell into place but very thankful for it nonetheless, "It happened really fast," he says, "but like they say, everything happens for a reason."</h3>
+					    	</div>
+					    </div>
+					    <a class="button yellow" onclick="nextSlide()">Read on</a>
+					    <a class="button ghost">Back to first page</a>
+					</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<script>
+		// $(document).ready(function(){
+		// 	$(".slides").owlCarousel({
+				
+		// 	});
+		// });
+
+		var owl = $('.owl-carousel');
+		
+		owl.owlCarousel({
+			loop: false,
+			margin: 8,
+			nav: false,
+			items: 1,
+			dots: false,
+		});
+
+		owl.on('changed.owl.carousel', function(event) {
+			console.log(event.property.value, 999);
+			if (event.property.value && event.property.value==1){
+				$("#match-card-header").removeClass("invisible");
+				$("#match-card-footer").removeClass("invisible");
+
+
+				$("#match-card-header").addClass("animate__animated animate__bounceInDown animate__delay-1s");
+				$("#match-card-footer").addClass("animate__animated animate__bounceInUp animate__delay-1s");
+				const element = document.querySelector('.match-check');
+				element.classList.add('animate__animated', 'animate__fadeInDown', 'animate__faster');
+				element.addEventListener('animationend', () => {
+					// $(".match-check").fadeOut(600);
+					// $(".match-dp").fadeIn(600);
+					console.log("animation done");
+					setTimeout(()=>{
+						$(".match-check").fadeOut(function(){
+							$(".match-dp").fadeIn(300);
+						});
+					},0);					
+				});
+			}
+		});
+
+		function startStory(){
+			$(".main-cover").fadeOut(300);
+			$(".chapter-card-container").fadeIn(300);
+		}
+
+		function nextSlide(){
+		    owl.trigger('next.owl.carousel');	
+		}
+
+
+    </script>
+
+</body>
+</html>
