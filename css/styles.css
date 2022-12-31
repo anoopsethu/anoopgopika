@@ -62,7 +62,7 @@ body{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 6vh;
+	bottom: 10vh;
 	padding: 16px;
 }
 .intro-text{
@@ -260,7 +260,7 @@ body{
 .bees-animation{
 	position: relative;
 	height: 300px;
-	top: -30px;
+	top: -60px;
 }
 .bee-left{
 	transform: scaleX(-1);
