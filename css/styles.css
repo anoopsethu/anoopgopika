@@ -3,7 +3,7 @@
 body{
 	font-family: 'Plus Jakarta Sans';
 	font-weight: 400;
-	overflow-y: hidden;
+	/*overflow-y: hidden;*/
 }
 .main-cover{
 	background: url('../img/Cover.svg'), linear-gradient(0deg, rgba(255,198,11,1) 0%, rgba(255,217,96,1) 100%);
