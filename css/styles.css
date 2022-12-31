@@ -267,3 +267,10 @@ body{
     right: -20px;
     top: -15px;
 }
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px -12px;
+}

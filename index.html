@@ -28,7 +28,7 @@
 			<lottie-player class="bee-right animate__animated animate__fadeIn" src="https://lottie.host/96864f38-88c4-4191-bebf-dc722910d14b/kEJqUNYc5v.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 		</div>
 		<div class="button-container animate__animated animate__bounceInUp">
-			<a class="button white" onclick="startStory()">Read our story</a>
+			<a class="button white" onclick="toggleFrontPage()">Read our story</a>
 			<a class="button blue">Download invitation</a>
 			<p class="intro-text">
 				Swipe left to read through our story. But if you’re a busy soul, feel free to just download the invitation above.
@@ -37,9 +37,18 @@
 	</section>
 
 	<div class="chapter-card-container" style="display: none;">
-		<a href="" class="logo">
-			<img src="img/Logo.svg">
-		</a>
+		<div class="navbar">
+			<a onclick="toggleFrontPage()" class="icon">
+				<img src="img/home.svg">
+			</a>	
+			<a class="logo">
+				<img src="img/Logo.svg">
+			</a>
+			<a  href="" class="icon">
+				<img src="img/chat.svg">
+			</a>	
+		</div>
+		
 
 		<div class="slides">
 			<div class="owl-carousel owl-theme">
@@ -244,7 +253,7 @@
 					    		</div>
 					    	</div>
 					    	<div class="card-question-container">
-					    		<h5 class="title">How did they present it before their parents?</h5>
+					    		<h5 class="title">How did they reveal the news to their parents?</h5>
 					    		<h3 class="answer">While Gopika had hinted about Anoop to her mom early on in the relationship, Anoop pulled a rather dramatic cinematic type reveal before his parents.</h3>
 					    	</div>
 					    	<div class="card-question-container image-container">
@@ -401,7 +410,7 @@
 					    	</div>
 					    </div>
 					    <a class="button yellow" onclick="nextSlide()">Wish them on WhatsApp</a>
-					    <a class="button ghost">Back to first page</a>
+					    <a class="button ghost" onclick="toggleFrontPage()">Back to first page</a>
 					</div>
 			    </div>
 			</div>
@@ -456,6 +465,17 @@
 		function startStory(){
 			$(".main-cover").fadeOut(300);
 			$(".chapter-card-container").fadeIn(300);
+		}
+
+		function toggleFrontPage(){
+			console.log($('.main-cover:visible').length>0);
+			if($('.main-cover:visible').length>0){
+				$(".main-cover").fadeOut(300);
+				$(".chapter-card-container").fadeIn(300);
+			} else{
+				$(".chapter-card-container").fadeOut(300);
+				$(".main-cover").fadeIn(300);				
+			}
 		}
 
 		function nextSlide(){
