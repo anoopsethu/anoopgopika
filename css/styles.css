@@ -1,18 +1,24 @@
 @font-face {
-    font-family: 'Circular Std Book';
-    src: url('../fonts/CircularStd-Book.woff') format('woff')              
+    font-family: 'Circular Book';
+    src: url('../fonts/Circular-Book.woff') format('woff')              
 }
 @font-face {
-    font-family: 'Circular Std Medium';
-    src: url('../fonts/CircularStd-Medium.woff') format('woff')              
-}
-@font-face {
-    font-family: 'Circular Std Bold';
-    src: url('../fonts/CircularStd-Bold.woff') format('woff')              
+    font-family: 'Circular Bold';
+    src: url('../fonts/Circular-Bold.woff') format('woff')              
 }
 
+
+@font-face {
+font-family: 'Circular Std Black';
+font-style: normal;
+font-weight: normal;
+src: local('Circular Std Black'), url('../fonts/CircularStd-Black.woff') format('woff');
+}
+
+
+
 body{
-	font-family: 'Circular Std Book';
+	font-family: 'Circular Book';
 	overflow-x: hidden;
 }
 .main-cover{
@@ -37,12 +43,12 @@ body{
 	border-radius: 1000px;
 	margin: 8px 0px 12px 0px;
 	text-align: center;
-	font-family: 'Circular Std Bold';
+	font-family: 'Circular Bold';
 	display: block;
 }
 .link{
     font-size: 16px;
-	font-family: 'Circular Std Bold';
+	font-family: 'Circular Bold';
     display: inline-block;
     margin: 24px 0px 0px 0px;
     border-bottom: 2px dotted #1979F2;
@@ -61,7 +67,7 @@ body{
 	color: #000;
 }
 .ghost{
-	font-family: 'Circular Std Bold';
+	font-family: 'Circular Bold';
 	background: transparent;
 	color: rgba(0,0,0,0.6);
 }
@@ -80,7 +86,7 @@ body{
 	line-height: 150%;
 	color: #000;
 	margin: 24px 0px 0px 0px;
-	font-family: 'Circular Std Book';
+	font-family: 'Circular Book';
 	text-align: center;
 }
 .hide, .disabled{
@@ -154,14 +160,14 @@ body{
 	padding: 8px 12px;
 	border-radius: 1000px;
 	background: #FFC42B;
-	font-family: 'Circular Std Bold';
+	font-family: 'Circular Bold';
 	font-size: 14px;
 	color: #000;
 }
 .chapter-title{
 	margin: 12px 0px 0px 0px;
 	color: #fff;
-	font-family: 'Circular Std Bold';
+	font-family: 'Circular Bold';
 	font-size: 26px;
 	line-height: 130%;
 }
@@ -170,15 +176,15 @@ body{
 	padding: 0px 16px
 }
 .card-question-container .title{
-	font-family: 'Circular Std Book';
-	font-size: 15px;
+	font-family: 'Circular Book';
+	font-size: 16px;
 	color: #6E6963;
 	line-height: 140%;
 	margin-bottom: 8px;
 }
 .card-question-container .answer{
-	font-family: 'Circular Std Book';
-	font-size: 18px;
+	font-family: 'Circular Book';
+	font-size: 19px;
 	color: #6E6963;
 	line-height: 140%;
 	margin: 0;
@@ -189,7 +195,7 @@ body{
 	padding: 8px 12px;
 	color: #000000;
 	font-size: 14px;
-	font-family: 'Circular Std Book';
+	font-family: 'Circular Book';
 	margin-right: 8px;
 	border-radius: 1000px;
 	display: inline-block;
@@ -229,7 +235,7 @@ body{
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);	
 }
 .caption{
-	font-family: 'Circular Std Book';
+	font-family: 'Circular Book';
 	font-size: 14px;
 	line-height: 140%;
 	color: #fff;
@@ -260,7 +266,7 @@ body{
 	margin: 0px auto 16px auto;
 }
 .card-yellow .sub-header{
-	font-family: 'Circular Std Bold';
+	font-family: 'Circular Bold';
 	font-size: 20px;
 	color: #000;
 	margin: 0;

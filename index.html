@@ -461,7 +461,6 @@
 
 		owl.on('changed.owl.carousel', function(event) {
 			if (typeof event.property.value == 'number'){
-				console.log(event.property.value);
 				if (event.property.value==1){
 					setTimeout(()=>{
 						$("#match-card-header").removeClass("invisible");
@@ -471,9 +470,6 @@
 						const element = document.querySelector('.match-check');
 						element.classList.add('animate__animated', 'animate__fadeInDown', 'animate__faster');
 						element.addEventListener('animationend', () => {
-							// $(".match-check").fadeOut(600);
-							// $(".match-dp").fadeIn(600);
-							console.log("animation done");
 							setTimeout(()=>{
 								$(".match-check").fadeOut(function(){
 									$(".match-dp").fadeIn(300);
@@ -499,11 +495,11 @@
 		}
 
 		function toggleFrontPage(){
-			console.log($('.main-cover:visible').length>0);
 			if($('.main-cover:visible').length>0){
 				$(".main-cover").fadeOut(300);
 				$(".chapter-card-container").fadeIn(300);
 			} else{
+		    	owl.trigger('to.owl.carousel', [0, 300]);	
 				$(".chapter-card-container").fadeOut(300);
 				$(".main-cover").fadeIn(300);				
 			}
