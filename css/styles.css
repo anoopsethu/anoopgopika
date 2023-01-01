@@ -6,13 +6,15 @@
     font-family: 'Circular Bold';
     src: url('../fonts/Circular-Bold.woff') format('woff')              
 }
-
 body{
 	font-family: 'Circular Book';
 	overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+a{
+	cursor: pointer;
 }
 .main-cover{
 	background: url('../img/Cover.svg'), linear-gradient(0deg, rgba(255,198,11,1) 0%, rgba(255,217,96,1) 100%);
@@ -322,4 +324,50 @@ body{
 }
 .progress-tile.filled{
 	background: #FEC629 !important; 
+}
+
+@media(min-width: 998px){
+	body{
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100vh;
+	    background: #f7f7f7;
+	}
+	.main-cover{
+		width: 360px;
+		height: 720px;
+	    border-radius: 16px;
+	    box-shadow: 0px 4px 24px rgba(0,0,0,0.07);
+	}
+	.button-container {
+	    bottom: 20px;
+	}
+	.main-cover .header {
+	    padding-top: 50px;
+	}
+	.chapter-container {
+	    height: 646px;
+		width: 360px;
+	}
+	.chapter-card-container {
+	    width: 360px;
+	    background: #fff;
+	    border-radius: 16px;
+	    box-shadow: 0px 4px 24px rgba(0,0,0,0.07);
+	}
+	.card-cover {
+	    height: 480px;
+	}
+	.navbar{
+		width: 360px;
+		margin: 0px;
+	}
+	.progress{
+		width: 360px;
+	}
+	.card-question-container img{
+		width: 360px !important;
+	}
 }
