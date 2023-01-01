@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'Circular Std Book';
+    src: url('../fonts/CircularStd-Book.woff') format('woff')              
+}
+@font-face {
+    font-family: 'Circular Std Medium';
+    font-weight: 500;
+    src: url('../fonts/CircularStd-Medium.woff') format('woff')              
+}
+@font-face {
+    font-family: 'Circular Std Bold';
+    font-weight: 600;
+    src: url('../fonts/CircularStd-Bold.woff') format('woff')              
+}
 
 body{
-	font-family: 'Plus Jakarta Sans';
-	font-weight: 400;
+	font-family: 'Circular Std Book';
 	overflow-x: hidden;
 }
 .main-cover{
@@ -27,12 +39,12 @@ body{
 	border-radius: 1000px;
 	margin: 8px 0px 12px 0px;
 	text-align: center;
-	font-weight: 700;
+	font-family: 'Circular Std Bold';
 	display: block;
 }
 .link{
     font-size: 16px;
-    font-weight: 700;
+	font-family: 'Circular Std Bold';
     display: inline-block;
     margin: 24px 0px 0px 0px;
     border-bottom: 2px dotted #1979F2;
@@ -51,7 +63,7 @@ body{
 	color: #000;
 }
 .ghost{
-	font-weight: 500;
+	font-family: 'Circular Std Bold';
 	background: transparent;
 	color: rgba(0,0,0,0.6);
 }
@@ -70,7 +82,7 @@ body{
 	line-height: 150%;
 	color: #000;
 	margin: 24px 0px 0px 0px;
-	font-weight: 500;
+	font-family: 'Circular Std Book';
 	text-align: center;
 }
 .hide, .disabled{
@@ -134,14 +146,14 @@ body{
 	padding: 8px 12px;
 	border-radius: 1000px;
 	background: #FFC42B;
-	font-weight: 700;
+	font-family: 'Circular Std Bold';
 	font-size: 14px;
 	color: #000;
 }
 .chapter-title{
 	margin: 12px 0px 0px 0px;
 	color: #fff;
-	font-weight: 700;
+	font-family: 'Circular Std Bold';
 	font-size: 26px;
 	line-height: 130%;
 }
@@ -150,14 +162,14 @@ body{
 	padding: 0px 16px
 }
 .card-question-container .title{
-	font-weight: 400;
+	font-family: 'Circular Std Book';
 	font-size: 15px;
 	color: #6E6963;
 	line-height: 140%;
 	margin-bottom: 8px;
 }
 .card-question-container .answer{
-	font-weight: 600;
+	font-family: 'Circular Std Medium';
 	font-size: 18px;
 	color: #6E6963;
 	line-height: 140%;
@@ -169,7 +181,7 @@ body{
 	padding: 8px 12px;
 	color: #000000;
 	font-size: 14px;
-	font-weight: 500;
+	font-family: 'Circular Std Book';
 	margin-right: 8px;
 	border-radius: 1000px;
 	display: inline-block;
@@ -209,7 +221,7 @@ body{
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);	
 }
 .caption{
-	font-weight: 400;
+	font-family: 'Circular Std Book';
 	font-size: 14px;
 	line-height: 140%;
 	color: #fff;
@@ -240,7 +252,7 @@ body{
 	margin: 0px auto 16px auto;
 }
 .card-yellow .sub-header{
-	font-weight: 700;
+	font-family: 'Circular Std Bold';
 	font-size: 20px;
 	color: #000;
 	margin: 0;
