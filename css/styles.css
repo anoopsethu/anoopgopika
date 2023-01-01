@@ -7,19 +7,12 @@
     src: url('../fonts/Circular-Bold.woff') format('woff')              
 }
 
-
-@font-face {
-font-family: 'Circular Std Black';
-font-style: normal;
-font-weight: normal;
-src: local('Circular Std Black'), url('../fonts/CircularStd-Black.woff') format('woff');
-}
-
-
-
 body{
 	font-family: 'Circular Book';
 	overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 .main-cover{
 	background: url('../img/Cover.svg'), linear-gradient(0deg, rgba(255,198,11,1) 0%, rgba(255,217,96,1) 100%);
