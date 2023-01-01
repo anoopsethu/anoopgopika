@@ -299,6 +299,8 @@ body{
     align-items: center;
     justify-content: space-around;
     margin: 0px -8px;
+    position: relative;
+    top: 4px;
 }
 .progress{
 	position: fixed;
