@@ -37,15 +37,27 @@
 	</section>
 
 	<div class="chapter-card-container" style="display: none;">
+		<div class="progress">
+			<span class="progress-tile filled" id="progress-tile-0"></span>
+			<span class="progress-tile" id="progress-tile-1"></span>
+			<span class="progress-tile" id="progress-tile-2"></span>
+			<span class="progress-tile" id="progress-tile-3"></span>
+			<span class="progress-tile" id="progress-tile-4"></span>
+			<span class="progress-tile" id="progress-tile-5"></span>
+			<span class="progress-tile" id="progress-tile-6"></span>
+			<span class="progress-tile" id="progress-tile-7"></span>
+			<span class="progress-tile" id="progress-tile-8"></span>
+		</div>
 		<div class="navbar">
 			<a onclick="toggleFrontPage()" class="icon">
 				<img src="img/home.svg">
 			</a>	
-			<a class="logo">
+			<a class="logo" onclick="toggleFrontPage()">
 				<img src="img/Logo.svg">
+				<img src="img/heart.svg" class="heart animate__animated animate__heartBeat animate__infinite">
 			</a>
 			<a href="https://anoopsethu.github.io/anoopgopika/invitation.pdf" target="_blank" class="icon">
-				<img src="img/chat.svg">
+				<img src="img/invitation.svg">
 			</a>	
 		</div>
 		
@@ -310,8 +322,9 @@
 				    		<div class="card-question-container">
 					    		<h3 class="answer">Be it in the midst of the picturesque Munnar, mist-laiden Ooty or sunny beaches in Goa, they spent quality time complementing each other, understanding each other’s likes, dislikes, aspirations, passion and thus making the base of their relationship even more stronger.</h3>
 					    	</div>
-					    	<div class="card-question-container" style="margin: 0px;">
+					    	<div class="card-question-container image-container" style="margin: 0px;">
 				    			<img src="img/chapter-6/3.png">
+					    		<p class="caption">Blue skies and sun-kissed tans ☀️🏖️</p>
 				    		</div>
 					    </div>
 					    <a class="button yellow" onclick="nextSlide()">Read on</a>
@@ -447,26 +460,36 @@
 		});
 
 		owl.on('changed.owl.carousel', function(event) {
-			console.log(event.property.value, 999);
-			if (event.property.value && event.property.value==1){
-				$("#match-card-header").removeClass("invisible");
-				$("#match-card-footer").removeClass("invisible");
-
-
-				$("#match-card-header").addClass("animate__animated animate__bounceInDown animate__delay-1s");
-				$("#match-card-footer").addClass("animate__animated animate__bounceInUp animate__delay-1s");
-				const element = document.querySelector('.match-check');
-				element.classList.add('animate__animated', 'animate__fadeInDown', 'animate__faster');
-				element.addEventListener('animationend', () => {
-					// $(".match-check").fadeOut(600);
-					// $(".match-dp").fadeIn(600);
-					console.log("animation done");
+			if (typeof event.property.value == 'number'){
+				console.log(event.property.value);
+				if (event.property.value==1){
 					setTimeout(()=>{
-						$(".match-check").fadeOut(function(){
-							$(".match-dp").fadeIn(300);
+						$("#match-card-header").removeClass("invisible");
+						$("#match-card-footer").removeClass("invisible");
+						$("#match-card-header").addClass("animate__animated animate__bounceInDown animate__delay-1s");
+						$("#match-card-footer").addClass("animate__animated animate__bounceInUp animate__delay-1s");
+						const element = document.querySelector('.match-check');
+						element.classList.add('animate__animated', 'animate__fadeInDown', 'animate__faster');
+						element.addEventListener('animationend', () => {
+							// $(".match-check").fadeOut(600);
+							// $(".match-dp").fadeIn(600);
+							console.log("animation done");
+							setTimeout(()=>{
+								$(".match-check").fadeOut(function(){
+									$(".match-dp").fadeIn(300);
+								});
+							},0);					
 						});
-					},0);					
-				});
+					}, 500);
+				}
+				for (var i = 0; i < (event.property.value + 1); i++) {
+					$("#progress-tile-" + (event.property.value)).addClass("filled");
+				}
+				for (var i = event.property.value; i < 9; i++) {
+					$("#progress-tile-" + (event.property.value + 1)).removeClass("filled");
+				}
+			} else {
+				$("#progress-tile-1").removeClass("filled");		
 			}
 		});
 

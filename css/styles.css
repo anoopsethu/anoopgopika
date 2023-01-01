@@ -93,9 +93,19 @@ body{
 	display: block;
 	text-align: center;
 	padding: 16px;
+	position: relative;
 }
 .logo img{
 	height: 32px;
+}
+.logo .heart{
+    height: 17px;
+    position: absolute;
+    left: -4px;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
 }
 .chapter-card-container{
 	padding: 0px 8px 8px 8px; 
@@ -289,4 +299,26 @@ body{
     align-items: center;
     justify-content: space-around;
     margin: 0px -8px;
+}
+.progress{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.progress-tile{
+	width: 11.12vw;
+	display: block;
+	height: 100%;
+	margin: 3px;
+	border-radius: 1000px;
+	background: #ccc; 
+}
+.progress-tile.filled{
+	background: #FEC629 !important; 
 }
