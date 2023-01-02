@@ -99,7 +99,7 @@
 				    	</div>
 				    	<div class="card-question-container image-container">
 				    		<img src="img/chapter-1/2.png">
-				    		<p class="caption">The one with 327 caricatures in the backdrop.</p>
+				    		<p class="caption">Who wouldn't pose when they get a super-fancy Airbnb!</p>
 				    	</div>
 				    	<div class="card-question-container">
 				    		<h5 class="title">Sweet. Now tell me something about Anoop?</h5>
@@ -134,7 +134,7 @@
 								<img src="img/chapter-match/dp.png" class="match-dp" style="display: none;">
 								<!-- <img src="img/chapter-match/output-onlinegiftools.gif" class="match-dp"> -->
 								<div id="match-card-footer" class="invisible">
-									<p class="description">Getting matched was just the beginning, read on to find how things turned for them later on.</p>
+									<p class="description">Getting matched was just the beginning, read on to find how a humble match on bumble turned things for them later on.</p>
 									<a class="button white" onclick="nextSlide()">Read on</a>
 									<a class="button ghost" onclick="toggleFrontPage()">Back to First Page</a>
 								</div>
@@ -204,6 +204,10 @@
 					    			<span class="pill"><span class="emoji">🇮🇳</span> Railway Station, Thrissur</span>
 					    			<span class="pill"><span class="emoji">🇮🇳</span> Platform Number 2</span>
 					    		</div>
+					    	</div>
+					    	<div class="card-question-container">
+					    		<img src="img/chapter-3/3.png">
+					    		<!-- <p class="caption">If coffee is love, then the cup of coffee is emotion! ✨</p> -->
 					    	</div>
 					    	<div class="card-question-container">
 					    		<h5 class="title">Haha, that’s super cool!</h5>
@@ -303,7 +307,7 @@
 					    	</div>
 					    	<div class="card-question-container image-container">
 					    		<img src="img/chapter-6/1.png">
-					    		<p class="caption">Who doesn't like filters!</p>
+					    		<p class="caption">A seventeenth century fort, shining sun and smiling faces 🏫</p>
 					    	</div>
 				    		<div class="card-question-container">
 					    		<h5 class="title">What are their favourite travel spots?</h5>
@@ -505,10 +509,12 @@
 				window.scrollTo({ top: 0, behavior: 'smooth' });
 				$(".main-cover").fadeOut(300);
 				$(".chapter-card-container").fadeIn(300);
+				$("#progress-tile-0").addClass("filled");				
 			} else{
 		    	owl.trigger('to.owl.carousel', [0, 300]);	
 				$(".chapter-card-container").fadeOut(300);
-				$(".main-cover").fadeIn(300);				
+				$(".main-cover").fadeIn(300);			
+				$(".progress-tile").removeClass("filled");			
 			}
 		}
 

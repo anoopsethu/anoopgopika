@@ -25,7 +25,7 @@ a{
 	overflow: hidden;
 }
 .main-cover .header{
-	padding-top: 9vh;
+	padding-top: 7vh;
 	text-align: center;
 }
 .main-cover .header img{
@@ -275,7 +275,7 @@ a{
 .card-yellow .description{
 	font-size: 16px;
 	color: rgba(0,0,0,0.9);
-	line-height: 140%;
+	line-height: 135%;
 	margin: 0 0 32px 0;
 }
 .bees-animation{
