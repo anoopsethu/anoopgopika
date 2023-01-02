@@ -325,6 +325,9 @@ a{
 .progress-tile.filled{
 	background: #FEC629 !important; 
 }
+.loader{
+	display: none;
+}
 
 @media(min-width: 998px){
 	body{
@@ -333,10 +336,12 @@ a{
 	    justify-content: center;
 	    align-items: center;
 	    height: 100vh;
-	    background: #f7f7f7;
+	    background-image: url('../img/bg-desktop.svg');
+	    background-repeat: no-repeat;
+	    background-size: cover;
 	}
 	.main-cover{
-		width: 360px;
+		width: 376px;
 		height: 720px;
 	    border-radius: 16px;
 	    box-shadow: 0px 4px 24px rgba(0,0,0,0.07);
@@ -356,6 +361,7 @@ a{
 	    background: #fff;
 	    border-radius: 16px;
 	    box-shadow: 0px 4px 24px rgba(0,0,0,0.07);
+	    position: relative;
 	}
 	.card-cover {
 	    height: 480px;
@@ -366,8 +372,31 @@ a{
 	}
 	.progress{
 		width: 360px;
+		position: absolute;
 	}
 	.card-question-container img{
 		width: 360px !important;
+	}
+	.loader{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		color: #fff;
+		z-index: 999;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-image: url('../img/bg-desktop.svg');
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	.loader-card{
+		width: 376px;
+		height: 720px;
+		border-radius: 16px;
+		background: url('../img/Cover.svg'), linear-gradient(0deg, rgba(255,198,11,1) 0%, rgba(255,217,96,1) 100%);
 	}
 }

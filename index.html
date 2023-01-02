@@ -19,6 +19,14 @@
 
 </head>
 <body>
+	<section class="loader" style="display: none;">
+		<div class="loader-card">
+			<div class="bees-animation" style="top: 219px;">
+				<lottie-player class="bee-left animate__animated animate__fadeIn" src="https://lottie.host/96864f38-88c4-4191-bebf-dc722910d14b/kEJqUNYc5v.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+				<lottie-player class="bee-right animate__animated animate__fadeIn" src="https://lottie.host/96864f38-88c4-4191-bebf-dc722910d14b/kEJqUNYc5v.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+			</div>
+		</div>
+	</section>
 	<section class="main-cover" onclick="toggleFrontPage()">
 		<div class="header">
 			<img class="animate__animated animate__bounceInDown" src="img/Cover Header.png">
@@ -504,7 +512,9 @@
 		}
 
 		function toggleFrontPage(){
-			console.log($('.main-cover:visible').length>0);
+			if ($(window).width() > 998){
+				$(".loader").show();
+			}
 			if($('.main-cover:visible').length>0){
 				window.scrollTo({ top: 0, behavior: 'smooth' });
 				$(".main-cover").fadeOut(300);
@@ -515,6 +525,11 @@
 				$(".chapter-card-container").fadeOut(300);
 				$(".main-cover").fadeIn(300);			
 				$(".progress-tile").removeClass("filled");			
+			}
+			if ($(window).width() > 998){
+				setTimeout(()=>{
+					$(".loader").hide();
+				}, 500);
 			}
 		}
 
