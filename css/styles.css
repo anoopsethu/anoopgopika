@@ -286,12 +286,12 @@ a{
 .bee-left{
 	transform: scaleX(-1);
     position: absolute;
-    left: -10px;
+    left: 0px;
     top: 0;
 }
 .bee-right{
     position: absolute;
-    right: -20px;
+    right: -10px;
     top: -15px;
 }
 .navbar{
