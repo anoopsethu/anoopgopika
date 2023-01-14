@@ -29,7 +29,9 @@ a{
 	text-align: center;
 }
 .main-cover .header img{
-	height: 225px;
+	height: 155px;
+	margin: 0px auto 20px auto;
+	display: block;
 }
 .button{
 	text-decoration: none;
@@ -83,6 +85,7 @@ a{
 	margin: 24px 0px 0px 0px;
 	font-family: 'Circular Book';
 	text-align: center;
+    padding: 0px 16px;
 }
 .hide, .disabled{
 	display: none;
@@ -325,8 +328,37 @@ a{
 .progress-tile.filled{
 	background: #FEC629 !important; 
 }
-.loader{
+/*.loader{
 	display: none;
+}*/
+.marquee-container{
+	margin: 0 auto;
+	border-radius: 1000px;
+	width: 255px;
+	height: 48px;
+	background: linear-gradient(180deg, #3D3D3D 0%, #000000 100%);
+	text-align: center;
+}
+.marquee-text{
+	color: #fff;
+	font-family: 'Circular Bold';
+	font-size: 20px;
+	padding: 10px;
+    margin: 0;
+}
+.loader-message{
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Circular Bold';
+	font-size: 18px;
+	margin-top: 110px;
+	color: #000;
+}
+.loader-card{
+	width: 100vw;
+	height: 100vh;
+	background: url('../img/Cover.svg'), linear-gradient(0deg, rgba(255,198,11,1) 0%, rgba(255,217,96,1) 100%);
+	background-size: cover;
 }
 
 @media(min-width: 998px){

@@ -30,6 +30,9 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/owl.theme.green.min.css">
 
+	<!-- Simple Text Rotator CSS -->
+	<link rel="stylesheet" type="text/css" href="css/simpletextrotator.css">
+
 	<!-- Document specific styles -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,17 +40,25 @@
 
 </head>
 <body>
-	<section class="loader" style="display: none;">
+	<section class="loader">
 		<div class="loader-card">
 			<div class="bees-animation" style="top: 219px;">
 				<lottie-player class="bee-left animate__animated animate__fadeIn" src="https://lottie.host/96864f38-88c4-4191-bebf-dc722910d14b/kEJqUNYc5v.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 				<lottie-player class="bee-right animate__animated animate__fadeIn" src="https://lottie.host/96864f38-88c4-4191-bebf-dc722910d14b/kEJqUNYc5v.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
 			</div>
+			<p class="loader-message">Tying the knot, loading the love...</p>
 		</div>
 	</section>
-	<section class="main-cover" onclick="toggleFrontPage()">
+	<section class="main-cover" onclick="toggleFrontPage()" style="display: none;">
 		<div class="header">
 			<img class="animate__animated animate__bounceInDown" src="img/Cover Header.png">
+			<div class="marquee-container animate__animated animate__bounceInDown">
+				<!-- <p class="marquee-text"><span data-colors="white" class="typer" data-delay="30" data-words="Wedding: 28 Jan 2023, Reception: 29 Jan 2023"></span></p>		 -->
+				<p class="marquee-text">
+					<span class="rotate">Wedding: 28 Jan 2023, Reception: 29 Jan 2023</span>
+				</p>		
+
+			</div>
 		</div>
 		<div class="bees-animation">
 			<lottie-player class="bee-left animate__animated animate__fadeIn" src="https://lottie.host/96864f38-88c4-4191-bebf-dc722910d14b/kEJqUNYc5v.json" background="transparent" speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
@@ -257,7 +268,8 @@
 					    	</div>
 					    	<div class="card-question-container">
 					    		<h5 class="title">How did things pan out after the meet-up?</h5>
-					    		<h3 class="answer">With time, they managed the challenges that came along with long-distance dating 🛣️. After the infamous railway station date, they made it a point to make more planned dates. Each one more exciting than the last 🤩! Whether it was a surprise weekend getaway or a spontaneous video call, they always found new and thrilling ways to keep the spark alive 🔥.</h3>
+					    		<h3 class="answer">
+								With time, they tackled the difficulties that came with long-distance dating like total pros. After their memorable railway station rendezvous, they made it a point to plan even more exciting dates, each one more thrilling than the last 🤩! Whether it was a surprise weekend getaway or a spontaneous video call, they always found new and thrilling ways to keep the spark alive 🔥.</h3>
 					    	</div>
 					    	<div class="card-question-container">
 					    		<h5 class="title">Great. So what are some of their common interests?</h5>
@@ -330,7 +342,7 @@
 					    		</div>
 					    	</div>
 					    	<div class="card-question-container">
-					    		<h3 class="answer">"Every wild weekend trip, every laugh-until-you-cry story shared, every precious moment spent together brought them closer and closer at heart. They were like two peas in a pod, having the time of their lives and making memories they'll cherish forever!"</h3>
+					    		<h3 class="answer">Every wild weekend trip, every laugh-until-you-cry story shared, every precious moment spent together brought them closer and closer at heart. They were like two peas in a pod, having the time of their lives and making memories they'll cherish forever! 👩‍❤️‍👨</h3>
 					    	</div>
 					    	<div class="card-question-container image-container">
 					    		<img src="img/chapter-6/1.png">
@@ -473,12 +485,21 @@
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<!-- <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script> -->
+	<script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
 	<script>
-		// $(document).ready(function(){
-		// 	$(".slides").owlCarousel({
-				
-		// 	});
-		// });
+		$(document).ready(function(){
+			setTimeout(()=>{
+				$(".loader").fadeOut();
+				$(".main-cover").fadeIn();
+			}, 4000);
+		});
+
+		$(".rotate").textrotator({
+		  animation: "flipCubeUp", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+		  separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+		  speed: 2000 // How many milliseconds until the next word show.
+		});
 
 		var owl = $('.owl-carousel');
 		
